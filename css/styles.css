@@ -254,5 +254,92 @@ img {
   margin-top: 0;
   margin-bottom: 36px;
 }
-.button {
+
+
+/* PAGE-SECTION */
+.page-section__header {
+  max-width: 635px;
+  margin-bottom: 72px;
+}
+
+.page-section__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 100;
+  letter-spacing: -0.7px;
+  color: var(--dark);
+}
+
+.page-section__desc {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+
+/* FEATURES */
+.features {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  background-color: #f4f5f7;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  list-style: none;
+}
+
+.features__item {
+  width: 255px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* FEATURE */
+.feature::before {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 40px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.feature--online-banking::before {
+  background-image: url("../img/feature-online-banking.png");
+}
+
+.feature--simple-budgeting::before {
+  background-image: url("../img/feature-simple-budgeting.png");
+}
+
+.feature--fast-onboarding::before {
+  background-image: url("../img/feature-fast-onboarding.png");
+}
+
+.feature--open-api::before {
+  background-image: url("../img/feature-open-api.png");
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  letter-spacing: -0.4px;
+  color: var(--dark);
+}
+
+.feature__desc {
+  margin: 0;
 }
