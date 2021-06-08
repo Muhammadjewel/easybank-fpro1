@@ -57,11 +57,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 80px;
   font-family: var(--font-stack);
   background-color: #fff;
   color: var(--grey);
   font-size: 16px;
   line-height: 26px;
+  letter-spacing: -0.2px;
   overflow-x: hidden;
 }
 
@@ -200,4 +202,57 @@ img {
 
 .site-header__action-wrapper {
   width: 180px;
+}
+
+
+/* SITE-CONTENT */
+.site-content {
+  flex-grow: 1;
+}
+
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-color: #fafafa;
+  background-image: url("../img/hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 600px) -260px;
+}
+
+.hero::after {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% + 100px);
+  top: -115px;
+  width: 729px;
+  height: 900px;
+  background-image: url("../img/hero-phones-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.hero__content {
+  max-width: 450px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 100;
+  color: var(--dark);
+  letter-spacing: -1px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.button {
 }
